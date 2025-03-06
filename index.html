@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yama Dolphin Trip</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(to bottom, #005f99, #00cc99);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 95, 153, 0.8);
+        }
+        .logo {
+            height: 60px;
+            background: transparent;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: 'Bree Serif', serif;
+        }
+        .trips-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .trip-card {
+            background: white;
+            color: black;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+        }
+        .trip-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .trip-card p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .whatsapp-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-family: 'Bree Serif', serif;
+        }
+        .why-choose {
+            padding: 30px;
+            background: rgba(0, 95, 153, 0.9);
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .home-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .social-footer {
+            background: rgba(0, 95, 153, 0.8);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .social-footer a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Yama Dolphin Trip Logo" class="logo">
+        <h1>🐬 Yama Dolphin Trip </h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">🏠 Home</a></li>
+            <li><a href="#trips">🚤 Trip</a></li>
+            <li><a href="#contact">📞 Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <h2> Selamat Datang di Yama Dolphin Trip! 🐬</h2>
+        <p>Petualangan tak terlupakan melihat lumba-lumba di Lovina! 🏝️</p>
+        <img src="head1.jpg" alt="Dolphin Trip" class="home-image">
+    </section>
+    
+    <section id="trips">
+        <h2>🌟 Paket Dolphin Trip 🌟</h2>
+        <div class="trips-container">
+            <div class="trip-card">
+                <img src="fulltrip-privat.jpg" alt="Fulltrip Privat">
+                <h3>Fulltrip Privat</h3>
+                <p>🌊 Nikmati perjalanan eksklusif hanya untuk Anda dan keluarga!</p>
+            </div>
+            <div class="trip-card">
+                <img src="" alt="Fulltrip Sharing">
+                <h3>Fulltrip Sharing</h3>
+                <p>🐬 Berbagi pengalaman luar biasa dengan wisatawan lain.</p>
+            </div>
+            <div class="trip-card">
+                <img src="snorkeling.jpg" alt="Dolphin and Snorkeling">
+                <h3>Dolphin and Snorkeling</h3>
+                <p>🤿 Saksikan lumba-lumba dan jelajahi keindahan bawah laut!</p>
+            </div>
+            <div class="trip-card">
+                <img src="swim.jpg" alt="Dolphin and Swimming with Dolphin">
+                <h3>Dolphin and Swimming with Dolphin</h3>
+                <p>🏊 Rasakan sensasi berenang bersama lumba-lumba yang mengagumkan.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="why-choose">
+        <h2>✨ Kenapa Memilih Yama Dolphin Trip? ✨</h2>
+        <ul>
+            <li>🐬 Bertemu lumba-lumba di habitat aslinya</li>
+            <li>🚤 Kapal nyaman dan aman</li>
+            <li>🏝️ Pemandu profesional dan ramah</li>
+            <li>📸 Spot foto terbaik untuk kenangan</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>📞 Hubungi Kami</h2>
+        <a href="https://wa.me/6281234567890" class="whatsapp-button">Pesan via WhatsApp</a>
+    </section>
+    
+    <footer class="social-footer">
+        <p>🌐 Ikuti Kami di Sosial Media</p>
+        <a href="https://www.tiktok.com/@yamadolphintrip">📱 TikTok</a>
+        <a href="https://www.instagram.com/yamadolphintrip">📸 Instagram</a>
+        <a href="https://wa.me/6281234567890">💬 WhatsApp</a>
+    </footer>
+</body>
+</html>
